@@ -1,3 +1,15 @@
+---
+type: Overview
+title: Scenarios
+description: Six competing futures for code and languages, how they combine, and the current bet.
+tags:
+- scenarios
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenarios
 
 Six possible outcomes of the tension described in [inertia and lock-in](../concepts/inertia-lock-in.md): code is no longer read, yet it is still written in languages made to be read.

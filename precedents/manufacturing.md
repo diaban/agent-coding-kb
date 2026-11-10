@@ -1,3 +1,16 @@
+---
+type: Precedent
+title: Manufacturing
+description: Manufacturing replaced inspection of parts with control of the process.
+tags:
+- precedents
+- process-control
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Manufacturing
 
 ## What was automated
@@ -20,5 +33,5 @@ Manufactured parts are meant to be identical, so sampling works. Every pull requ
 
 ## Related
 
-- [Precedents overview](README.md)
+- [Precedents overview](overview.md)
 - [Automated checks take over](../findings/automated-checks.md)

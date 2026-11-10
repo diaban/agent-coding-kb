@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Automation bias
+description: Humans who approve many correct proposals end up approving incorrect ones.
+tags:
+- risk
+- review
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Automation bias
 
 ## Claim

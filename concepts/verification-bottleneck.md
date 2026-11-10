@@ -1,3 +1,15 @@
+---
+type: Concept
+title: The verification bottleneck
+description: The scarce resource moves from writing code to verifying it.
+tags:
+- verification
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # The verification bottleneck
 
 ## Claim
@@ -27,6 +39,6 @@ The value of a team moves with the bottleneck. A large, trustworthy test suite b
 
 ## Related
 
-- [Precedents](../precedents/README.md): the same shift in other industries
+- [Precedents](../precedents/overview.md): the same shift in other industries
 - [Inertia and lock-in](inertia-lock-in.md)
 - [Scenario 2: the specification becomes the language](../scenarios/02-spec-as-language.md)

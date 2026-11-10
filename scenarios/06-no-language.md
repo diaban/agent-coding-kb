@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 6: no language at all'
+description: 'The programming language disappears: non-text output, or the model runs the task itself.'
+tags:
+- scenarios
+- representation
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 6: no language at all
 
 ## Claim

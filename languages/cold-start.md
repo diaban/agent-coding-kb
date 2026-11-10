@@ -1,3 +1,16 @@
+---
+type: Concept
+title: The cold-start problem
+description: A new agent language has no training data; three routes to reduce that cost.
+tags:
+- languages
+- training-data
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # The cold-start problem
 
 ## Claim

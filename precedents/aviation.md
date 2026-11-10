@@ -1,3 +1,16 @@
+---
+type: Precedent
+title: Aviation
+description: Aviation certifies software by tracing each requirement to its tests.
+tags:
+- precedents
+- certification
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Aviation
 
 ## What was automated
@@ -18,6 +31,6 @@ Certification is slow and expensive by design, and applies to a narrow class of 
 
 ## Related
 
-- [Precedents overview](README.md)
+- [Precedents overview](overview.md)
 - [Ironies of automation](../concepts/ironies-of-automation.md): the same field produced the warning about lost skills
 - [Scenario 4: the backlash](../scenarios/04-backlash.md)

@@ -1,3 +1,16 @@
+---
+type: Precedent
+title: Compilers
+description: Compilers made assembly unread; where that analogy with agents breaks.
+tags:
+- precedents
+- determinism
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Compilers
 
 ## What was automated
@@ -26,6 +39,6 @@ Trust in a compiler transfers from one compilation to the next. Trust in an agen
 
 ## Related
 
-- [Precedents overview](README.md)
+- [Precedents overview](overview.md)
 - [Verification bottleneck](../concepts/verification-bottleneck.md)
 - [Scenario 2: the specification becomes the language](../scenarios/02-spec-as-language.md)

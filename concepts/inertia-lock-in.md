@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Inertia and lock-in
+description: 'Why agents keep writing human languages: a self-reinforcing lock-in.'
+tags:
+- lock-in
+- training-data
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Inertia and lock-in
 
 ## Claim

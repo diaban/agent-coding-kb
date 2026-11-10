@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 5: the language under the language'
+description: An agent language takes hold as an intermediate representation humans never see.
+tags:
+- scenarios
+- agent-language
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 5: the language under the language
 
 ## Claim

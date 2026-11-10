@@ -1,3 +1,15 @@
+---
+type: Open Questions
+title: Open questions
+description: Questions this knowledge base does not answer.
+tags:
+- open-questions
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Open questions
 
 ## From the second synthesis

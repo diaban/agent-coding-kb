@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Abstract syntax tree (AST)
+description: The abstract syntax tree and why code stored as structure matters.
+tags:
+- ast
+- representation
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Abstract syntax tree (AST)
 
 ## Definition

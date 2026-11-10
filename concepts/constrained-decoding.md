@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Grammar-constrained decoding
+description: Restricting model output to a grammar makes syntax errors impossible.
+tags:
+- decoding
+- syntax
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Grammar-constrained decoding
 
 ## Claim

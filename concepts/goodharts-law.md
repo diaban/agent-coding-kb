@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Goodhart's law applied to tests
+description: If passing tests is the only criterion, agents can pass them without solving the problem.
+tags:
+- testing
+- risk
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Goodhart's law applied to tests
 
 ## Claim
