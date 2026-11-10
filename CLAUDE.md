@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-A knowledge base, not a codebase. It contains only markdown and has no build, lint or test commands. It is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) (OKF) v0.2 bundle about what happens to software practice and programming languages once agents write most code and humans read little of it. `README.md` holds the thesis and the map. Read it before you edit any content.
+A knowledge base, not a codebase. It contains only markdown and has no build or test step. The only checks are the OpenKnowledge ones described at the end of this file. It is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) (OKF) v0.2 bundle about what happens to software practice and programming languages once agents write most code and humans read little of it. `README.md` holds the thesis and the map. Read it before you edit any content.
 
 ## The argument the notes must stay consistent with
 
@@ -23,14 +23,20 @@ Every note under `findings/`, `concepts/`, `precedents/`, `scenarios/` and `lang
 - Findings also carry `stale_after`, because their figures age quickly.
 - No note has a `verified` field. In OKF that means unverified. Add `verified: { by: human:<id>, at: <datetime> }` only after a human checks a figure against its primary source.
 
-Body template: `# Title`, then `## Claim`, `## Evidence`, `## Objections` and `## Related`, which holds relative links to neighbouring notes. Scenario notes swap Evidence for sections such as `## What it looks like`.
+Body template: `# Title`, then `## Claim`, `## Evidence`, `## Objections` and `## Related`, which holds relative links to neighbouring notes. Only `findings/` follows this exactly. The other folders differ:
+
+- `concepts/` and `languages/` keep `Claim` (`ast.md` uses `Definition`), `Objections` and `Related`, with sections specific to each topic in between.
+- `scenarios/` use `Claim`, `What it looks like`, then sections such as `Signals to watch`, `Objections` and `Related`.
+- `precedents/` have no Claim. They use a fixed set: `What was automated`, `What replaced human inspection`, `Lesson for code`, `Where the analogy breaks` and `Related`.
+
+Questions the bundle cannot answer go in `open-questions.md`. Many notes link to it.
 
 ## Changes that touch several files
 
 Adding, renaming or removing a note means updating, in the same change:
 
 1. **The folder's `index.md`**: no frontmatter, one line per note in the form `* [Title](file.md) - description`. The description must match the note's frontmatter `description`.
-2. **The root `index.md`**: same line format, in the right section. Its only frontmatter is `okf_version: "0.2"`.
+2. **The root `index.md`**: same line format, in the right section. Each section starts with a `* [Folder](folder/) - index of this directory` line. Its only frontmatter is `okf_version: "0.2"`.
 3. **`log.md`**: a bullet under a `## YYYY-MM-DD` heading, tagged `**Creation**`, `**Update**` or `**Initialization**`.
 4. **`sources.md`**, if the note adds a source or a figure: its frontmatter `sources`, the References table, and the "Verification status" table (figure, note that uses it, source id, status). Mark secondary figures as such. The main known weakness is that most figures rely on the one secondary compilation `agentic-engineering-2026`.
 
@@ -42,4 +48,11 @@ Folder overviews live in `overview.md`, not `README.md` (see `precedents/` and `
 
 The repo is set up for OpenKnowledge (`.ok/`, `.okignore`, and the skill in `.github/skills/open-knowledge/SKILL.md`). That skill requires all reads and writes of in-scope `.md` files to go through the `mcp__open-knowledge__*` tools (`exec`, `search`, `write`, `edit`, `lint`, `audit`, `move`, `delete`) instead of native file tools. This keeps edits attributed and links checked. Use native tools on markdown only when those tools are unavailable or a call fails, and say so in your reply when you do.
 
-As of this writing, the repo has only `.ok/local/` and no `.ok/config.yml`. The MCP tools fail with "No OpenKnowledge project found" until the project is initialized on this machine (see `.github/skills/open-knowledge/references/setup.md`).
+The project is initialized. `.ok/config.yml` is committed and only holds defaults. `.ok/local/` is per-machine state and git ignores it. Identical copies of the skill live in `.claude/skills/` and `.github/skills/`. Change the skill through the `skills` and `edit({ skill })` tools, not by editing a copy by hand: a copy edited by hand forks and stops refreshing from the source.
+
+Checks, the closest thing this repo has to tests:
+
+- `ok audit [path]`, or the MCP `audit` tool, checks for broken internal links. It needs the project server to be running (`ok status`, `ok start`). Run it after any change that adds, moves or renames a note.
+- `ok lint [path]`, or the MCP `lint` tool, runs markdownlint and frontmatter rules. No rules are configured yet, so it currently reports "No checks ran".
+
+No tool checks the OKF conventions above, such as index descriptions matching frontmatter or `sources.md` staying in sync. Check them by hand.
