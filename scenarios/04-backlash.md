@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 4: the backlash'
+description: Incidents trigger audit requirements and human readability becomes mandatory again.
+tags:
+- scenarios
+- regulation
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 4: the backlash
 
 ## Claim
@@ -15,7 +28,7 @@ This is the counter-scenario. It was missing from both syntheses.
 
 ## Why it is plausible
 
-In every [precedent](../precedents/README.md), regulation followed incidents. The [findings](../findings/review-bottleneck.md) already report rising incidents per pull request, if those figures hold.
+In every [precedent](../precedents/overview.md), regulation followed incidents. The [findings](../findings/review-bottleneck.md) already report rising incidents per pull request, if those figures hold.
 
 ## Signals to watch
 

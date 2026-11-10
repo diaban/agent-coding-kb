@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 2: the specification becomes the language'
+description: Specifications and tests become what humans read; code is regenerated.
+tags:
+- scenarios
+- specification
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 2: the specification becomes the language
 
 ## Claim

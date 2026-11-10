@@ -1,3 +1,15 @@
+---
+type: Overview
+title: Agent coding knowledge base
+description: Thesis, map and status of the agent coding knowledge base.
+tags:
+- overview
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Agent coding knowledge base
 
 Notes on what happens to software practice and programming languages once agents write most of the code and humans read little of it.
@@ -17,14 +29,24 @@ Two positions structure the notes:
 
 | Folder | What it holds |
 | --- | --- |
-| [findings/](findings/) | What the numbers say today: share of AI-written code, the review bottleneck, the shift to automated checks |
-| [concepts/](concepts/) | The ideas the argument rests on |
-| [precedents/](precedents/README.md) | Industries that automated production before software did |
-| [scenarios/](scenarios/README.md) | Six possible futures, with the signals that would confirm each |
-| [languages/](languages/) | What actually limits agents in current languages, existing projects, the cold-start problem |
+| [findings/](findings/index.md) | What the numbers say today: share of AI-written code, the review bottleneck, the shift to automated checks |
+| [concepts/](concepts/index.md) | The ideas the argument rests on |
+| [precedents/](precedents/overview.md) | Industries that automated production before software did |
+| [scenarios/](scenarios/overview.md) | Six possible futures, with the signals that would confirm each |
+| [languages/](languages/index.md) | What actually limits agents in current languages, existing projects, the cold-start problem |
 | [open-questions.md](open-questions.md) | What this base does not answer |
 | [sources.md](sources.md) | Every figure, its source, and whether it has been checked |
-| [archive/v1.md](archive/v1.md) | The first synthesis (in French), kept unchanged |
+| [archive/v1.md](archive/v1.md) | The first synthesis (in French), body unchanged, marked `deprecated` |
+
+## Format
+
+This repository is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) (OKF) v0.2 bundle: plain markdown files with YAML frontmatter, readable by people and by agents.
+
+- Every note is a concept with a `type`, `title`, `description` and `tags`.
+- [index.md](index.md) lists the whole bundle; each folder has its own `index.md`. [log.md](log.md) records changes.
+- `sources` in the frontmatter lists what a note relies on, and footnotes in the body point to those entries.
+- `generated` says who wrote the note. No note carries a `verified` field yet, which in OKF means **unverified**. All notes are `status: draft`.
+- Findings carry a `stale_after` date, because their figures age quickly.
 
 ## How to read a note
 

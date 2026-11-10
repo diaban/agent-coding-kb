@@ -1,3 +1,16 @@
+---
+type: Precedent
+title: Market finance
+description: Algorithmic trading led to risk limits and automatic circuit breakers.
+tags:
+- precedents
+- circuit-breakers
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Market finance
 
 ## What was automated
@@ -22,5 +35,5 @@ Markets have a single, fast, shared signal: price. Software incidents are hetero
 
 ## Related
 
-- [Precedents overview](README.md)
+- [Precedents overview](overview.md)
 - [Scenario 4: the backlash](../scenarios/04-backlash.md)

@@ -1,3 +1,16 @@
+---
+type: Analysis
+title: Design trajectory for an agent language
+description: Five design steps toward a language built on guarantees instead of density.
+tags:
+- languages
+- design
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Design trajectory for an agent language
 
 ## Claim

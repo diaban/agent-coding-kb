@@ -1,3 +1,16 @@
+---
+type: Precedent
+title: Chip design
+description: In chip design, automated generation made verification the core of the job.
+tags:
+- precedents
+- formal-verification
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Chip design
 
 ## What was automated
@@ -18,5 +31,5 @@ A chip has a formal specification to check against, and a manufacturing error is
 
 ## Related
 
-- [Precedents overview](README.md)
+- [Precedents overview](overview.md)
 - [Design trajectory](../languages/design-trajectory.md): contracts and proofs

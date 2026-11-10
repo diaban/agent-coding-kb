@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 3: all-harness'
+description: Most code becomes disposable under an agent harness; software splits into two layers.
+tags:
+- scenarios
+- harness
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 3: all-harness
 
 ## Claim

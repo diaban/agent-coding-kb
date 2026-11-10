@@ -1,3 +1,16 @@
+---
+type: Concept
+title: Separation between producer and verifier
+description: Whoever produces the work should not certify it.
+tags:
+- verification
+- risk
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Separation between producer and verifier
 
 ## Claim

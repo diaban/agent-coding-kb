@@ -1,3 +1,16 @@
+---
+type: Analysis
+title: Real vs overrated limits of current languages
+description: Which limits of current languages really hinder agents and which are overrated.
+tags:
+- languages
+- tokenization
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Real vs overrated limits of current languages
 
 ## Claim

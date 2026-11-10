@@ -1,3 +1,16 @@
+---
+type: Scenario
+title: 'Scenario 1: lock-in'
+description: Dominant languages are hardened, not replaced, and niche languages decline.
+tags:
+- scenarios
+- lock-in
+status: draft
+generated:
+  by: claude/claude-fable-5-2
+  at: '2026-11-10T19:50:00Z'
+---
+
 # Scenario 1: lock-in
 
 ## Claim
